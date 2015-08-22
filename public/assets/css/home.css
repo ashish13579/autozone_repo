@@ -1,0 +1,27 @@
+.navbar-nav > li{
+    margin:3px;
+    padding-right:10px;
+    font-family: 'Segoe UI','Helvetica Neue','sans-serif';
+}
+
+.navbar-default .navbar-nav > li > a {
+	color:#888888;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #000000;
+}
+
+
+.navbar-brand {
+	margin: 5px;
+}
+
+.navbar-nav {
+	background: #FFFFFF;
+}
+
+
+body{
+    background:#EFEFEF;
+}
