@@ -5,11 +5,14 @@
 }
 
 .navbar-default .navbar-nav > li > a {
-	color:#888888;
+	color:#444444;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 70px;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #000000;
+    color: #AAAAAA;
 }
 
 
@@ -17,11 +20,158 @@
 	margin: 5px;
 }
 
-.navbar-nav {
-	background: #FFFFFF;
-}
-
 
 body{
     background:#EFEFEF;
+    
+}
+
+.horizontal_space {
+	width: 100%;
+    height: 2%;
+}
+
+.slider-nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.slider-dots {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.slider-dots li {
+  color: #bbbcbc;
+  display: inline;
+  font-size: 40px;
+  margin-right: 5px;
+}
+
+.slider-dots li.active-dot {
+  color: #363636;
+}
+
+.slider {
+	height: 90%;
+    margin-top:50px;
+    background-color: #DFDFDF;
+}
+
+.slide_container {
+	position:relative; 
+    height:90%;
+}
+
+.slide{
+    display:none;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.active-slide {
+	display: block;
+}
+
+.navbar-fixed-top {
+    min-height: 80px;
+}
+
+
+@media (max-width: 767px) {
+    .navbar-nav > li > a {
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;}
+}
+
+.content-box {
+	height:40%;
+    box-shadow: 4px;
+    border: 0.5px solid gray;
+ /*   background-color: beige;
+    border: 2px solid #444;*/
+}
+
+.content-image{
+    position: relative;
+    height: 80%;
+    width: 100%;
+    left:0;
+    top:0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+ /*   border: 2px solid #FF0000;*/
+}
+
+.content-text {
+	position: relative;
+    height: 20%;
+    width: 100%;
+    left: 0px;
+    padding:2px;
+    background: #FFF;
+  /*  border: 2px solid green;*/
+}
+
+.content_a1 {
+	background-image: url(../img/car_interior_1.png);
+    
+}
+.content_a2 {
+	background-image: url(../img/car_interior_2.png);
+}
+.content_a3 {
+	background-image: url(../img/car_interior_3.png);
+}
+
+.content_b1{
+    background-image: url(../img/car_exterior_1.png);
+}
+.content_b2{
+    background-image: url(../img/car_exterior_2.png);
+}
+.content_b3{
+    background-image: url(../img/car_exterior_3.png);
+}
+
+.content_c1{
+    background-image: url(../img/car_exterior_1.png);
+}
+.content_c2{
+    background-image: url(../img/car_exterior_2.png);
+}
+.content_c3{
+    background-image: url(../img/car_exterior_3.png);
+}
+
+
+.sitemap {
+	height: 30%;
+    background: #000;
+    color: cornsilk;
+ 
+}
+
+.sitemap_main {
+	position: relative;
+    height:100%;
+}
+
+.sitemap_logo {
+	position: absolute;
+    margin: 3%;
+    float: left;
+}
+
+.sitemap_content {
+    position: absolute;
+	right: 10%;
 }

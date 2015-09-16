@@ -1,0 +1,256 @@
+body{
+    background: #000;
+}
+
+/*  Start Of MAIN Navigation Section */
+
+.navtop{
+    height: 15%;
+    width: 100%;
+    position: relative;
+    background-color: rgba(0,0,0,0.6);
+    border-bottom: 2px solid grey;
+}
+
+.social-list{
+    margin-left:70%;
+    margin-top: 15px;
+    margin-right: 30px;
+    height: 40%;
+    overflow: hidden;
+}
+
+.social-list >img{
+    float: right;
+    margin: 0px 10px 0px 10px;
+}
+
+.nav-contents{
+    float:right;
+    height: 100%;
+}
+
+.nav-list{
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+    list-style: none;
+    overflow: hidden;
+}
+
+.nav-list>li{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    float: left;
+    margin: 3% 15px 3% 15px;
+    font-size: 20px;
+    color: #bbb;
+}
+
+
+.nav-list>li:hover{
+    color: #fff;
+}
+
+.nav-list li ul{
+  padding: 0;
+  position: absolute;
+  top: 0px;
+  padding-top: 40px;
+  left: -5px;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+
+.nav-list li ul li{
+    padding: 2px;
+    font-size: 16px;
+    background: #000;
+    opacity: 0.8;
+    color: #ddd;
+    display: block; 
+    border-bottom: 1px solid grey;
+    text-shadow: 0 -1px 0 #000;
+}
+
+
+.nav-list li ul li:hover{
+    color: #fff;
+}
+
+.nav-list li:hover > ul{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/*  End Of MAIN Navigation Section */
+
+/* Start of Small Navigation Section*/
+
+#myNav {
+    height: 8%;
+    background-color: rgba(0,0,0,0.6);
+    border-bottom: 2px solid grey;
+    z-index: 1;
+    font-size: 16px;
+}
+#myNav ul{
+    margin: 10px;
+}
+#myNav ul li a{
+    color: #bbb;
+}
+#myNav ul li a:hover {
+	 color: #fff;
+}
+
+#myNav ul li a:focus {
+	 color: #fff;
+     background: none;
+}
+
+.dropdown-menu {
+	 color: #ddd;
+     background-color: #000     
+}
+
+.dropdown-menu li {
+    border: 2px solid grey;
+}
+
+.dropdown ul li a{
+    color: #ddd;
+}
+.dropdown ul li a:hover,.dropdown ul li a:focus{
+	 color: #fff;
+    background: none;
+}
+
+/* END of Small Navigation Section*/
+
+/*  Start Of Slider Section */
+
+.slider {
+    position: relative;
+	height: 100%;
+}
+
+.slide {
+    display: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.active-slide {
+	display: block;
+}
+
+.img-pane{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    height: 100%;
+    width: 100%;
+}
+
+.left{
+    background-image: url(../img/home2/left.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top:55%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    
+}
+
+.right{
+    background-image: url(../img/home2/right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top:55%;
+    left: 96.5%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+  
+}
+
+
+.slide1{
+    background-image: url(../img/home2/1.png);
+}
+
+.slide2{
+    background-image: url(../img/home2/2.png);
+}
+
+.slide3{
+    background-image: url(../img/home2/3.png);
+}
+
+.slide4{
+    background-image: url(../img/home2/4.png);
+}
+
+/*  End Of Slider Section */
+
+/*Start Of mid content section*/
+.mid-content {
+    position:absolute;
+	height: 25%;
+    top: 100%;
+    left:0px;
+    width: 100%;
+    padding-top:5px; 
+    background:#fff;
+}
+.mid-content hr{
+    height: 2px;
+    background: grey;
+}
+
+.mid-content p{
+    color: #555;
+}
+
+/*End Of mid content section*/
+
+
+/*  Start Of Footer Section */
+.footer {
+    position:absolute;
+	height: 25%;
+    top: 125%;
+    left:0px;
+    width: 100%;
+    padding-top: 5px;
+    background:#000;
+}
+
+.footer h3{
+    color: slategray;
+}
+
+.footer p{
+	color:#aaa;
+}
+/*  End Of Footer Section */

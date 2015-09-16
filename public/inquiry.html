@@ -1,0 +1,206 @@
+<html>
+    <head>
+        <title> Inquiry Form </title>
+         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <!-- CSS Scripts-->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+        
+        <link rel="stylesheet" type="text/css" href="assets/css/inquiry.css">
+        
+        
+        
+        <!-- JS Scripts -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="assets/js/inquiry.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+       
+        
+    </head>
+    
+    <body>
+        
+        <!-- Main Navbar -->
+        <div class="navtop">
+            <div class="container-fluid">
+                <div class="nav-logo" style="float:left;">
+                    <img src="assets/img/logo_white.png" style="margin-top:5px;" height="130px" width="200px" />
+                </div>
+                <div class="social-list">
+                    <img class="img-responsive" height="35px" width="35px" src="assets/img/youtube.png" />
+                    <img class="img-responsive" height="35px" width="35px" src="assets/img/instagram.png" />
+                    <img class="img-responsive" height="35px" width="35px" src="assets/img/twitter.png" />
+                    <img class="img-responsive" height="35px" width="35px" src="assets/img/facebook.png" />
+                </div>
+                <div class="nav-contents">
+                    <ul class="nav-list">
+                        <li>HOME</li>
+                        <li>EXTERIOR</li>
+                        <li>INTERIOR <b class="caret"></b>
+                           <ul>
+                              <li>Seats</li>
+                              <li>Trims & Fininshings</li>
+                              <li>Lighting</li>
+                              <li>Audio</li>
+                              <li>Accessories</li>
+                           </ul> 
+                        </li>
+                        <li>DESIGN SELECTOR</li>
+                        <li>GALLERY</li>
+                        <li>CONTACT US</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+        <!-- Small Navbar -->
+
+        <div id="myNav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <!--For overflow icon-->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img style="height:72px; margin-top: -15px;" src="assets/img/logo_white.png"></a>
+                </div>
+
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="exterior.html">EXTERIOR</a></li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">INTERIOR <b class="caret"></b></a>
+                            <ul role="menu" class="dropdown-menu">
+                                <li><a href="#">SEATS</a></li>
+                                <li><a href="#">TRIMS</a></li>
+                                <li><a href="#">LIGHTING</a></li>
+                                <li><a href="#">AUDIO</a></li>
+                                <li><a href="#">ACCESSORIES</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">DESIGN SELECTOR</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+
+                        <li><a href="#"><img class="img-responsive" height="25px" width="25px" src="assets/img/facebook.png" /></a></li>
+                        <li><a href="#"><img class="img-responsive" height="25px" width="25px" src="assets/img/twitter.png" /></a></li>
+                        <li><a href="#"><img class="img-responsive" height="25px" width="25px" src="assets/img/instagram.png" /></a></li>
+                        <li><a href="#"><img class="img-responsive" height="25px" width="25px" src="assets/img/youtube.png" /></a></li>
+                    </ul>
+                </div>    
+            </div>
+        </div>  
+        
+        
+        <div class="content-pane">
+            <div class="container-fluid">
+            <h1 class="text-center" style="font:'open sans' 18px;">INQUIRY FORM</h1>
+            <hr>
+            <div class="container" style="font-size:15px;">
+                <form class="form-horizontal">
+                    <div class="text-center">
+                    <button type="button" class="btn btn-default active">Price Inquiry</button>
+                    <button type="button" class="btn btn-default">Car Exchange Inquiry</button>
+                    <button type="button" class="btn btn-default">Book Test Ride</button>
+                    </div>
+                    <br>
+                    <br>
+                    
+                    
+                    <h3> Mandatory Information</h3>
+                    <hr>
+                    
+                    <div class="main_info form-group">
+                        <div class="col-sm-4 col-md-3 col-lg-3">
+                        Name*:<br>
+                        <input type="text" name="name" pattern="[a-zA-Z]" />
+                        </div>
+                        
+                        <div class="col-sm-4 col-md-3 col-lg-3">
+                        Contact No*:<br>
+                        <input type="text" name="phone" pattern="[0-9]" />
+                        </div>
+
+                        <div class="col-sm-4 col-md-3 col-lg-3">
+                        Email*:<br>
+                        <input type="text" name="email" pattern="[a-zA-Z]" />
+                        </div>
+
+                        <div class="col-sm-4 col-md-3 col-lg-3">
+                        Address*:<br>
+                        <input type="text" name="address" pattern="[a-zA-Z]" />
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="car_inquiry">
+                    <br>
+                    <br>
+
+                    <h3> Car Inquiry Information</h3>
+                    <hr>
+                    <div class="basic_car_info form-group">
+                        <div class="col-sm-4 col-md-3 col-lg-3">
+                        Input Car Make:<br>
+                        <input type="text" name="car_make" pattern="[a-zA-Z]" />
+                        </div>
+                        
+                        <div class="col-sm-4 col-md-3 col-lg-3">
+                        Input Car Model:<br>
+                        <input type="text" name="car_model" pattern="[a-zA-Z0-9]" />
+                        </div>
+
+                        <div class="col-sm-4 col-md-3 col-lg-3">
+                        Production Year:<br>
+                        <input type="text" name="year" pattern="[0-9]" />
+                        </div>
+
+                        <div class="col-sm-4 col-md-3 col-lg-3">
+                        Input Car Type:<br>
+                        <input type="text" name="car_type" pattern="[a-zA-Z]" />
+                        </div>
+                        
+                        
+                    </div>
+                    <br>
+                    <h4 class="text-center">Accessories</h4>
+                    <br>
+                    <div class="advanced_car_info form-group">
+                        <div class="container">
+                        <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4"><input type="checkbox"/>  Driver's seat</div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">  <input type="checkbox" /> Passenger seat </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">                         <input type="checkbox" /> Rear bench seat</div>
+                        </div>
+                       
+                        <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4"><input type="checkbox"/>  Centre armrest</div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">  <input type="checkbox" /> Bi-colour upholstery </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">                         <input type="checkbox" /> Perforated inserts</div>
+                        </div>
+
+
+                        <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4"><input type="checkbox"/>  Seat inserts alcantara</div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">  <input type="checkbox" /> Steering wheel </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">                         <input type="checkbox" /> Gear lever</div>
+                        </div>
+                       
+                        </div>
+                    </div>
+                    </div>
+                    <br>
+                    <div class="text-center"><button class="btn" style="background:#000;color:#fff;font-size:16px"> Submit </button> </div>
+                    
+                </form>
+            </div>
+            </div>
+        </div>
+    </body>
+
+</html>
