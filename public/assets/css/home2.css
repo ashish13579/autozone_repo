@@ -5,7 +5,7 @@ body{
 /*  Start Of MAIN Navigation Section */
 
 .navtop{
-    height: 15%;
+    height: 150px;
     width: 100%;
     position: relative;
     background-color: rgba(0,0,0,0.6);
@@ -13,9 +13,10 @@ body{
 }
 
 .social-list{
-    margin-left:70%;
-    margin-top: 15px;
-    margin-right: 30px;
+    position: absolute;
+    left: 85%;
+    margin-top: 10px;
+    margin-right: 20px;
     height: 40%;
     overflow: hidden;
 }
@@ -23,11 +24,13 @@ body{
 .social-list >img{
     float: right;
     margin: 0px 10px 0px 10px;
+    cursor: pointer;
 }
 
 .nav-contents{
     float:right;
-    height: 100%;
+    height: auto;
+    margin-top: 85px;
 }
 
 .nav-list{
@@ -215,13 +218,14 @@ body{
 
 /*Start Of mid content section*/
 .mid-content {
-    position:absolute;
-	height: 25%;
+    position:relative;
+	height: auto;
     top: 100%;
     left:0px;
     width: 100%;
     padding-top:5px; 
     background:#fff;
+    margin: 5px;
 }
 .mid-content hr{
     height: 2px;
@@ -238,7 +242,7 @@ body{
 /*  Start Of Footer Section */
 .footer {
     position:absolute;
-	height: 25%;
+	height: auto;
     top: 125%;
     left:0px;
     width: 100%;
