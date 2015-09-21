@@ -5,10 +5,15 @@ var ticker=0;
 
 var background_change=setInterval(function(){
     
-    if(ticker==4)
-        ticker=0;
+    var currentSlide=$(".active-slide");
+    var nextSlide=currentSlide.next();
     
-    $(".a").css("background-image","url("+urls[ticker]+")");
-    ticker++;
+    if(nextSlide.length===0)
+    {
+        nextSlide=$(".slide").first();
+    }
+    
+    currentSlide.fadeOut(600).removeClass('active-slide');
+    nextSlide.fadeIn(600).addClass('active-slide');
     
 },3000);
